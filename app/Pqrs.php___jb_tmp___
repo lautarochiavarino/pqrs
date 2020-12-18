@@ -1,0 +1,14 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Pqrs extends Model
+{
+    protected $table = "pqrs";
+
+    protected $fillable = [
+        'aSuNombre','formatoRecepcion','tipoSolicitud','tipoSolicitante_id','nombreApellido','medioRespuesta','email','direccionFisica','pais_id','provincia_id','cp','telFijo','telCelular','breveDescripcion','descripcion','adjuntarSoporte','estado'
+    ];
+}

@@ -1,0 +1,44 @@
+<meta name="http-equiv" content="Content-type: text/html; charset=UTF-8"/>
+
+
+<table>
+	<tr style="background:#069; color:#FFF; font-weight:bold;">
+		<td>#Outage</td>
+		<td>SBU</td>
+		<td>Country</td>	
+		<td>#Company</td>
+		<td>Company</td> 	
+		<td>#Plant</td>
+		<td>Plant</td>
+		<td>Plant Type</td>
+		<td>Main fuel</td>
+		<td>Location</td>
+		<td>Outage Type</td>
+		<td>Description</td>
+		<td>Start date</td>
+		<td>End date</td>
+		<td>Days</td>
+		<td>Start year</td>
+		<td>QT</td>
+		<td>#Project</td>
+		<td>Project name</td>
+		<td>Budget Process Status</td>
+		<td>Rollover WBS Element</td>
+		<td>Cost centers</td>
+		<td>Priority</td>
+		<td>Responsible</td>
+		<td>Specs Received (Y/N)</td>
+		<td>Technical Specifications Complete for procurement purposes?</td>
+		<td>Total Budget</td>
+		<td>CAPEX</td>
+		<td>OPEX</td>
+		<td>NPV</td>
+		<td>IRR</td>
+		<td>Start year</td>
+	</tr>
+
+
+
+
+</table>
+

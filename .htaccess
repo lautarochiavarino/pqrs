@@ -1,0 +1,36 @@
+php_value upload_max_filesize 1000M
+php_value post_max_size 200M
+php_value memory_limit 3000M
+php_value max_execution_time 180
+php_value max_input_time 180
+php_value display_errors Off
+php_value upload_max_filesize 50M
+php_value allow_url_fopen Off
+
+
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|log|bak|txt|env|json|xml|lock|config)$">
+ Order Allow,Deny
+ Deny from all
+</FilesMatch>
+
+#CABECERAS HTACCESS
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains"
+  <FilesMatch "\.(php|html)$">
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Powered-By "sessionstudio"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-UA-Compatible "IE=edge,chrome=1"
+    Header set Referrer-Policy "strict-origin"
+    Header set Feature-Policy "accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none';"
+	Header set Access-Control-Allow-Origin "Origin"
+	Header set Content-Security-Policy "upgrade-insecure-requests"
+	Header set Content-Security-Policy-Report-Only "default-src https: data: 'unsafe-inline'; connect-src https: wss:"
+	Header set Timing-Allow-Origin: "*"
+  </FilesMatch>
+</IfModule>
+
+#COOKIES
+Header edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure;SameSite=strict
